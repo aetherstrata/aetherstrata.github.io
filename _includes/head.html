@@ -1,15 +1,11 @@
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-{% seo %}
-{% if site.keywords or page.tags %}
-<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ','}}{% else %}{{ site.keywords | join: ',' }}{% endif %}" />
-{% endif %}
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="/favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css" />
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/prism.css" />
-<script src="{{ site.baseurl }}/assets/js/prism.js"></script>
-{% if site.analytics.plausible.enabled  %}
-<script defer data-domain="{{ site.analytics.plausible.site_fqdn }}" src="{{ site.analytics.plausible.script_source }}"></script>
-{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+</head>
