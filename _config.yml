@@ -1,0 +1,21 @@
+# Site settings
+title: aetherstrata
+description: Davide Pierotti - Personal resources
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://aest.dev" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: aetherstrata
+user_description: I'm an Engineering student from Rome, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been focused on learning the .NET ecosystem and I'm currently working on a tv series tracker for mobile phones.
+user_title: Software Engineer
+email: d.pierotti@live.it
+twitter_username: aetherstrata
+instagram_username: aetherstrata
+# facebook_username:
+linkedin_username: davide-pierotti-45733a215
+github_username: aetherstrata
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
+
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
+
